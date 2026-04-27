@@ -12,7 +12,11 @@
 ## 📸 App Preview
 
 <p align="center">
-  <img src="assets/readme/mockup.png" width="400" alt="SmartCampus Companion Mockup">
+  <img src="assets/readme/flutter home .png" width="400" alt="SmartCampus Companion Mockup">
+  <img src="assets/readme/flutter events.png" width="400" alt="SmartCampus Companion Mockup">
+  <img src="assets/readme/flutter anouncement.png" width="400" alt="SmartCampus Companion Mockup">
+  
+
 </p>
 
 ---
@@ -177,8 +181,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 🤝 Contact
 
 For any inquiries or feedback, please reach out:
-- **Project Lead**: [Your Name](https://github.com/yourusername)
-- **Email**: support@smartcampus.edu
-- **Issue Tracker**: [GitHub Issues](https://github.com/yourusername/smartcampus_companion/issues)
+- **Project Lead**: [Your Name](https://github.com/AbdeldjalilNe)
+- **Email**: [EMAIL_ADDRESS][abdeledjalil.nemouchi@univ-constantine2.dz]
+- **Issue Tracker**: [GitHub Issues](https://github.com/AbdeldjalilNe/Flutter_SmartCampus/issues)
 
 <p align="center">Made with ❤️ for the SmartCampus Community</p>

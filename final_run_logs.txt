@@ -1,0 +1,8 @@
+Launching lib/main.dart on sdk gphone16k x86 64 in debug mode...
+Running Gradle task 'assembleDebug'...                            105.2s
+✓ Built build/app/outputs/flutter-apk/app-debug.apk
+adb: device 'emulator-5554' not found
+Installing build/app/outputs/flutter-apk/app-debug.apk...           11ms
+Error: ADB exited with exit code 1
+adb: device 'emulator-5554' not found
+Error launching application on sdk gphone16k x86 64.

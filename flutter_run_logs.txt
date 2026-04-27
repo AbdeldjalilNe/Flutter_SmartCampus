@@ -1,0 +1,123 @@
+Launching lib/main.dart on sdk gphone16k x86 64 in debug mode...
+Running Gradle task 'assembleDebug'...                            211.9s
+✓ Built build/app/outputs/flutter-apk/app-debug.apk
+Installing build/app/outputs/flutter-apk/app-debug.apk...        2,278ms
+D/FlutterJNI( 4183): Beginning load of flutter...
+D/FlutterJNI( 4183): flutter (null) was loaded normally!
+I/flutter ( 4183): [IMPORTANT:flutter/shell/platform/android/android_context_gl_impeller.cc(104)] Using the Impeller rendering backend (OpenGLES).
+D/FlutterGeolocator( 4183): Attaching Geolocator to activity
+D/FlutterRenderer( 4183): Width is zero. 0,0
+D/FlutterRenderer( 4183): Width is zero. 0,0
+D/FlutterJNI( 4183): Sending viewport metrics to the engine.
+D/FlutterGeolocator( 4183): Creating service.
+D/FlutterGeolocator( 4183): Binding to location service.
+D/FlutterGeolocator( 4183): Geolocator foreground service connected
+D/FlutterGeolocator( 4183): Initializing Geolocator services
+D/FlutterGeolocator( 4183): Flutter engine connected. Connected engine count 1
+D/FlutterJNI( 4183): Sending viewport metrics to the engine.
+I/flutter ( 4183): [38;5;12m┌───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────[0m
+I/flutter ( 4183): [38;5;12m│ #0   AppLogger.info (package:smartcampus_companion/core/utils/logger.dart:27:13)[0m
+I/flutter ( 4183): [38;5;12m│ #1   NotificationService.initialize (package:smartcampus_companion/core/notifications/notification_service.dart:39:15)[0m
+I/flutter ( 4183): [38;5;12m├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄[0m
+I/flutter ( 4183): [38;5;12m│ 2026-04-11 01:14:48.047[0m
+I/flutter ( 4183): [38;5;12m├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄[0m
+I/flutter ( 4183): [38;5;12m│ 💡 Notification service initialized[0m
+I/flutter ( 4183): [38;5;12m└───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────[0m
+I/flutter ( 4183): [38;5;12m┌───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────[0m
+I/flutter ( 4183): [38;5;12m│ #0   AppLogger.info (package:smartcampus_companion/core/utils/logger.dart:27:13)[0m
+I/flutter ( 4183): [38;5;12m│ #1   AppLifecycleObserver.initialize (package:smartcampus_companion/core/lifecycle/app_lifecycle_observer.dart:18:15)[0m
+I/flutter ( 4183): [38;5;12m├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄[0m
+I/flutter ( 4183): [38;5;12m│ 2026-04-11 01:14:48.097[0m
+I/flutter ( 4183): [38;5;12m├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄[0m
+I/flutter ( 4183): [38;5;12m│ 💡 AppLifecycleObserver initialized[0m
+I/flutter ( 4183): [38;5;12m└───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────[0m
+I/flutter ( 4183): [38;5;12m┌───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────[0m
+I/flutter ( 4183): [38;5;12m│ #0   AppLogger.info (package:smartcampus_companion/core/utils/logger.dart:27:13)[0m
+I/flutter ( 4183): [38;5;12m│ #1   LocalizationBloc._onLoadLocalization.<anonymous closure> (package:smartcampus_companion/presentation/bloc/localization/localization_bloc.dart:37:19)[0m
+I/flutter ( 4183): [38;5;12m├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄[0m
+I/flutter ( 4183): [38;5;12m│ 2026-04-11 01:14:48.473[0m
+I/flutter ( 4183): [38;5;12m├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄[0m
+I/flutter ( 4183): [38;5;12m│ 💡 Language loaded: English[0m
+I/flutter ( 4183): [38;5;12m└───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────[0m
+I/flutter ( 4183): ┌───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+I/flutter ( 4183): │ #0   AppLogger.debug (package:smartcampus_companion/core/utils/logger.dart:22:13)
+I/flutter ( 4183): │ #1   AuthRepositoryImpl.getCurrentUser (package:smartcampus_companion/data/repositories/auth_repository_impl.dart:103:19)
+I/flutter ( 4183): ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄
+I/flutter ( 4183): │ 2026-04-11 01:14:51.447
+I/flutter ( 4183): ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄
+I/flutter ( 4183): │ 🐛 User retrieved from local storage
+I/flutter ( 4183): └───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+E/flutter ( 4183): [ERROR:flutter/runtime/dart_vm_initializer.cc(40)] Unhandled Exception: 'package:bloc/src/emitter.dart': Failed assertion: line 114 pos 7: '!_isCompleted': 
+E/flutter ( 4183): 
+E/flutter ( 4183): emit was called after an event handler completed normally.
+E/flutter ( 4183): This is usually due to an unawaited future in an event handler.
+E/flutter ( 4183): Please make sure to await all asynchronous operations with event handlers
+E/flutter ( 4183): and use emit.isDone after asynchronous operations before calling emit() to
+E/flutter ( 4183): ensure the event handler has not completed.
+E/flutter ( 4183): 
+E/flutter ( 4183):   **BAD**
+E/flutter ( 4183):   on<Event>((event, emit) {
+E/flutter ( 4183):     future.whenComplete(() => emit(...));
+E/flutter ( 4183):   });
+E/flutter ( 4183): 
+E/flutter ( 4183):   **GOOD**
+E/flutter ( 4183):   on<Event>((event, emit) async {
+E/flutter ( 4183):     await future.whenComplete(() => emit(...));
+E/flutter ( 4183):   });
+E/flutter ( 4183): 
+E/flutter ( 4183): #0      _AssertionError._doThrowNew (dart:core-patch/errors_patch.dart:67:4)
+E/flutter ( 4183): #1      _AssertionError._throwNew (dart:core-patch/errors_patch.dart:49:5)
+E/flutter ( 4183): #2      _Emitter.call (package:bloc/src/emitter.dart:114:7)
+E/flutter ( 4183): #3      AuthBloc._onAppStarted.<anonymous closure>.<anonymous closure> (package:smartcampus_companion/presentation/bloc/auth/auth_bloc.dart:43:27)
+E/flutter ( 4183): #4      Right.fold (package:dartz/src/either.dart:200:64)
+E/flutter ( 4183): #5      AuthBloc._onAppStarted.<anonymous closure> (package:smartcampus_companion/presentation/bloc/auth/auth_bloc.dart:41:22)
+E/flutter ( 4183): <asynchronous suspension>
+E/flutter ( 4183): 
+I/flutter ( 4183): ┌───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+I/flutter ( 4183): │ #0   AppLogger.debug (package:smartcampus_companion/core/utils/logger.dart:22:13)
+I/flutter ( 4183): │ #1   AuthRepositoryImpl.getCurrentUser (package:smartcampus_companion/data/repositories/auth_repository_impl.dart:103:19)
+I/flutter ( 4183): ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄
+I/flutter ( 4183): │ 2026-04-11 01:14:51.469
+I/flutter ( 4183): ├┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄┄
+I/flutter ( 4183): │ 🐛 User retrieved from local storage
+I/flutter ( 4183): └───────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
+E/flutter ( 4183): [ERROR:flutter/runtime/dart_vm_initializer.cc(40)] Unhandled Exception: 'package:bloc/src/emitter.dart': Failed assertion: line 114 pos 7: '!_isCompleted': 
+E/flutter ( 4183): 
+E/flutter ( 4183): emit was called after an event handler completed normally.
+E/flutter ( 4183): This is usually due to an unawaited future in an event handler.
+E/flutter ( 4183): Please make sure to await all asynchronous operations with event handlers
+E/flutter ( 4183): and use emit.isDone after asynchronous operations before calling emit() to
+E/flutter ( 4183): ensure the event handler has not completed.
+E/flutter ( 4183): 
+E/flutter ( 4183):   **BAD**
+E/flutter ( 4183):   on<Event>((event, emit) {
+E/flutter ( 4183):     future.whenComplete(() => emit(...));
+E/flutter ( 4183):   });
+E/flutter ( 4183): 
+E/flutter ( 4183):   **GOOD**
+E/flutter ( 4183):   on<Event>((event, emit) async {
+E/flutter ( 4183):     await future.whenComplete(() => emit(...));
+E/flutter ( 4183):   });
+E/flutter ( 4183): 
+E/flutter ( 4183): #0      _AssertionError._doThrowNew (dart:core-patch/errors_patch.dart:67:4)
+E/flutter ( 4183): #1      _AssertionError._throwNew (dart:core-patch/errors_patch.dart:49:5)
+E/flutter ( 4183): #2      _Emitter.call (package:bloc/src/emitter.dart:114:7)
+E/flutter ( 4183): #3      AuthBloc._onCheckAuthStatus.<anonymous closure>.<anonymous closure> (package:smartcampus_companion/presentation/bloc/auth/auth_bloc.dart:191:27)
+E/flutter ( 4183): #4      Right.fold (package:dartz/src/either.dart:200:64)
+E/flutter ( 4183): #5      AuthBloc._onCheckAuthStatus.<anonymous closure> (package:smartcampus_companion/presentation/bloc/auth/auth_bloc.dart:189:22)
+E/flutter ( 4183): <asynchronous suspension>
+E/flutter ( 4183): 
+Syncing files to device sdk gphone16k x86 64...                    539ms
+
+Flutter run key commands.
+r Hot reload. 🔥🔥🔥
+R Hot restart.
+h List all available interactive commands.
+d Detach (terminate "flutter run" but leave application running).
+c Clear the screen
+q Quit (terminate the application on the device).
+
+A Dart VM Service on sdk gphone16k x86 64 is available at: http://127.0.0.1:44853/ZDh7L3kV15k=/
+The Flutter DevTools debugger and profiler on sdk gphone16k x86 64 is available at: http://127.0.0.1:44853/ZDh7L3kV15k=/devtools/?uri=ws://127.0.0.1:44853/ZDh7L3kV15k=/ws
+
+Lost connection to device.
