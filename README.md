@@ -144,8 +144,8 @@ graph TD
 
 1. **Clone the Repo**
    ```bash
-   git clone https://github.com/yourusername/smartcampus_companion.git
-   cd smartcampus_companion
+   git clone https://github.com/AbdeldjalilNe/Flutter_SmartCampus.git
+   cd Flutter_SmartCampus
    ```
 
 2. **Setup API Keys**
@@ -165,10 +165,9 @@ graph TD
 ---
 
 ## 🗺️ Roadmap
-- [ ] **AI Assistant**: Integrate a campus-specific chatbot for student queries.
-- [ ] **AR Navigation**: Augmented Reality pathfinding for indoor campus navigation.
-- [ ] **Meal Plan Integration**: Digital wallet for cafeteria payments.
-- [ ] **Real-time Bus Tracking**: Integration with campus shuttle GPS.
+- [ ] **University Map**: Integrate a Map to make student easier to find their way on campus.
+- [ ] **Applying reviews**: SStudents can give reviews on courses and exams.
+
 
 ---
 
@@ -185,4 +184,4 @@ For any inquiries or feedback, please reach out:
 - **Email**: [EMAIL_ADDRESS][abdeledjalil.nemouchi@univ-constantine2.dz]
 - **Issue Tracker**: [GitHub Issues](https://github.com/AbdeldjalilNe/Flutter_SmartCampus/issues)
 
-<p align="center">Made with ❤️ for the SmartCampus Community</p>
+<p align="center">Made with Abdeldjalil and Faycal.</p>
