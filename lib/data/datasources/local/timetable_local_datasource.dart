@@ -15,7 +15,7 @@ abstract class TimetableLocalDataSource {
 }
 
 class TimetableLocalDataSourceImpl implements TimetableLocalDataSource {
-  TimetableLocalDataSourceImpl({dynamic sharedPreferences});
+  TimetableLocalDataSourceImpl();
 
   @override
   Future<List<TimetableItem>> getTimetable() async => [];

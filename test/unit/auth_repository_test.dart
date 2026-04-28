@@ -4,7 +4,6 @@ import 'package:local_auth/local_auth.dart';
 import 'package:mockito/annotations.dart';
 import 'package:mockito/mockito.dart';
 import 'package:smartcampus_companion/core/errors/failures.dart';
-import 'package:smartcampus_companion/core/constants/app_constants.dart';
 import 'package:smartcampus_companion/data/datasources/local/auth_local_datasource.dart';
 import 'package:smartcampus_companion/data/datasources/remote/auth_remote_datasource.dart';
 import 'package:smartcampus_companion/data/repositories/auth_repository_impl.dart';

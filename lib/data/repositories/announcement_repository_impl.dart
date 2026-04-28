@@ -22,25 +22,25 @@ class AnnouncementRepositoryImpl implements AnnouncementRepository {
     bool forceRefresh = false,
     AnnouncementCategory? category,
     AnnouncementPriority? priority,
-  }) async => Right([]);
+  }) async => const Right([]);
 
   @override
-  Future<Either<Failure, Announcement>> getAnnouncementById(String id) async => Left(ServerFailure(message: 'Not implemented'));
+  Future<Either<Failure, Announcement>> getAnnouncementById(String id) async => const Left(ServerFailure(message: 'Not implemented'));
 
   @override
-  Future<Either<Failure, List<Announcement>>> getUnreadAnnouncements() async => Right([]);
+  Future<Either<Failure, List<Announcement>>> getUnreadAnnouncements() async => const Right([]);
 
   @override
-  Future<Either<Failure, List<Announcement>>> getUrgentAnnouncements() async => Right([]);
+  Future<Either<Failure, List<Announcement>>> getUrgentAnnouncements() async => const Right([]);
 
   @override
-  Future<Either<CacheFailure, void>> markAsRead(String id) async => Right(null);
+  Future<Either<CacheFailure, void>> markAsRead(String id) async => const Right(null);
 
   @override
-  Future<Either<CacheFailure, void>> markAllAsRead() async => Right(null);
+  Future<Either<CacheFailure, void>> markAllAsRead() async => const Right(null);
 
   @override
-  Future<Either<Failure, List<Announcement>>> searchAnnouncements(String query) async => Right([]);
+  Future<Either<Failure, List<Announcement>>> searchAnnouncements(String query) async => const Right([]);
 
   @override
   Future<Either<ServerFailure, Announcement>> createAnnouncement({
@@ -50,7 +50,7 @@ class AnnouncementRepositoryImpl implements AnnouncementRepository {
     AnnouncementPriority priority = AnnouncementPriority.normal,
     DateTime? expiresAt,
     String? imageUrl,
-  }) async => Left(ServerFailure(message: 'Not implemented'));
+  }) async => const Left(ServerFailure(message: 'Not implemented'));
 
   @override
   Future<Either<ServerFailure, Announcement>> updateAnnouncement({
@@ -61,17 +61,17 @@ class AnnouncementRepositoryImpl implements AnnouncementRepository {
     AnnouncementPriority? priority,
     DateTime? expiresAt,
     String? imageUrl,
-  }) async => Left(ServerFailure(message: 'Not implemented'));
+  }) async => const Left(ServerFailure(message: 'Not implemented'));
 
   @override
-  Future<Either<ServerFailure, void>> deleteAnnouncement(String id) async => Right(null);
+  Future<Either<ServerFailure, void>> deleteAnnouncement(String id) async => const Right(null);
 
   @override
-  Future<Either<CacheFailure, void>> clearCache() async => Right(null);
+  Future<Either<CacheFailure, void>> clearCache() async => const Right(null);
 
   @override
-  Future<Either<CacheFailure, DateTime?>> getLastSyncTime() async => Right(null);
+  Future<Either<CacheFailure, DateTime?>> getLastSyncTime() async => const Right(null);
 
   @override
-  Future<Either<Failure, void>> syncAnnouncements() async => Right(null);
+  Future<Either<Failure, void>> syncAnnouncements() async => const Right(null);
 }

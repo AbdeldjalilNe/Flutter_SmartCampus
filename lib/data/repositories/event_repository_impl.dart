@@ -23,25 +23,25 @@ class EventRepositoryImpl implements EventRepository {
     bool forceRefresh = false,
     EventCategory? category,
     EventStatus? status,
-  }) async => Right([]);
+  }) async => const Right([]);
 
   @override
-  Future<Either<Failure, Event>> getEventById(String id) async => Left(ServerFailure(message: 'Not implemented'));
+  Future<Either<Failure, Event>> getEventById(String id) async => const Left(ServerFailure(message: 'Not implemented'));
 
   @override
-  Future<Either<Failure, List<Event>>> getUpcomingEvents() async => Right([]);
+  Future<Either<Failure, List<Event>>> getUpcomingEvents() async => const Right([]);
 
   @override
-  Future<Either<Failure, List<Event>>> getOngoingEvents() async => Right([]);
+  Future<Either<Failure, List<Event>>> getOngoingEvents() async => const Right([]);
 
   @override
-  Future<Either<Failure, List<Event>>> getRegisteredEvents() async => Right([]);
+  Future<Either<Failure, List<Event>>> getRegisteredEvents() async => const Right([]);
 
   @override
-  Future<Either<ServerFailure, Event>> registerForEvent(String eventId) async => Left(ServerFailure(message: 'Not implemented'));
+  Future<Either<ServerFailure, Event>> registerForEvent(String eventId) async => const Left(ServerFailure(message: 'Not implemented'));
 
   @override
-  Future<Either<ServerFailure, Event>> unregisterFromEvent(String eventId) async => Left(ServerFailure(message: 'Not implemented'));
+  Future<Either<ServerFailure, Event>> unregisterFromEvent(String eventId) async => const Left(ServerFailure(message: 'Not implemented'));
 
   @override
   Future<Either<Failure, CheckIn>> checkInToEvent({
@@ -49,19 +49,19 @@ class EventRepositoryImpl implements EventRepository {
     String? qrCodeData,
     double? latitude,
     double? longitude,
-  }) async => Left(ServerFailure(message: 'Not implemented'));
+  }) async => const Left(ServerFailure(message: 'Not implemented'));
 
   @override
-  Future<Either<Failure, bool>> hasCheckedIn(String eventId) async => Right(false);
+  Future<Either<Failure, bool>> hasCheckedIn(String eventId) async => const Right(false);
 
   @override
-  Future<Either<Failure, List<CheckIn>>> getEventCheckIns(String eventId) async => Right([]);
+  Future<Either<Failure, List<CheckIn>>> getEventCheckIns(String eventId) async => const Right([]);
 
   @override
-  Future<Either<Failure, String>> generateCheckInQrCode(String eventId) async => Right('');
+  Future<Either<Failure, String>> generateCheckInQrCode(String eventId) async => const Right('');
 
   @override
-  Future<Either<Failure, String>> validateCheckInQrCode(String qrData) async => Right('');
+  Future<Either<Failure, String>> validateCheckInQrCode(String qrData) async => const Right('');
 
   @override
   Future<Either<ServerFailure, Event>> createEvent({
@@ -74,7 +74,7 @@ class EventRepositoryImpl implements EventRepository {
     int? maxAttendees,
     String? imageUrl,
     bool requiresCheckIn = false,
-  }) async => Left(ServerFailure(message: 'Not implemented'));
+  }) async => const Left(ServerFailure(message: 'Not implemented'));
 
   @override
   Future<Either<ServerFailure, Event>> updateEvent({
@@ -88,20 +88,20 @@ class EventRepositoryImpl implements EventRepository {
     EventStatus? status,
     int? maxAttendees,
     String? imageUrl,
-  }) async => Left(ServerFailure(message: 'Not implemented'));
+  }) async => const Left(ServerFailure(message: 'Not implemented'));
 
   @override
-  Future<Either<ServerFailure, void>> deleteEvent(String id) async => Right(null);
+  Future<Either<ServerFailure, void>> deleteEvent(String id) async => const Right(null);
 
   @override
-  Future<Either<Failure, List<Event>>> searchEvents(String query) async => Right([]);
+  Future<Either<Failure, List<Event>>> searchEvents(String query) async => const Right([]);
 
   @override
-  Future<Either<CacheFailure, void>> clearCache() async => Right(null);
+  Future<Either<CacheFailure, void>> clearCache() async => const Right(null);
 
   @override
-  Future<Either<CacheFailure, DateTime?>> getLastSyncTime() async => Right(null);
+  Future<Either<CacheFailure, DateTime?>> getLastSyncTime() async => const Right(null);
 
   @override
-  Future<Either<Failure, void>> syncEvents() async => Right(null);
+  Future<Either<Failure, void>> syncEvents() async => const Right(null);
 }

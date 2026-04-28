@@ -116,21 +116,15 @@ Future<void> configureDependencies() async {
   );
 
   getIt.registerLazySingleton<AnnouncementLocalDataSource>(
-    () => AnnouncementLocalDataSourceImpl(
-      sharedPreferences: getIt(),
-    ),
+    () => AnnouncementLocalDataSourceImpl(),
   );
 
   getIt.registerLazySingleton<EventLocalDataSource>(
-    () => EventLocalDataSourceImpl(
-      sharedPreferences: getIt(),
-    ),
+    () => EventLocalDataSourceImpl(),
   );
 
   getIt.registerLazySingleton<TimetableLocalDataSource>(
-    () => TimetableLocalDataSourceImpl(
-      sharedPreferences: getIt(),
-    ),
+    () => TimetableLocalDataSourceImpl(),
   );
 
   getIt.registerLazySingleton<SettingsLocalDataSource>(
@@ -145,11 +139,11 @@ Future<void> configureDependencies() async {
   );
 
   getIt.registerLazySingleton<AnnouncementRemoteDataSource>(
-    () => AnnouncementRemoteDataSourceImpl(),
+    AnnouncementRemoteDataSourceImpl.new,
   );
 
   getIt.registerLazySingleton<EventRemoteDataSource>(
-    () => EventRemoteDataSourceImpl(),
+    EventRemoteDataSourceImpl.new,
   );
 
   // Repositories

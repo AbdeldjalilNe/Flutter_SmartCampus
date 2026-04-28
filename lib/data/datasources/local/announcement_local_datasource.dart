@@ -12,7 +12,7 @@ abstract class AnnouncementLocalDataSource {
 }
 
 class AnnouncementLocalDataSourceImpl implements AnnouncementLocalDataSource {
-  AnnouncementLocalDataSourceImpl({dynamic sharedPreferences});
+  AnnouncementLocalDataSourceImpl();
 
   @override
   Future<List<Announcement>> getCachedAnnouncements() async => [];

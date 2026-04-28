@@ -14,7 +14,7 @@ abstract class EventLocalDataSource {
 }
 
 class EventLocalDataSourceImpl implements EventLocalDataSource {
-  EventLocalDataSourceImpl({dynamic sharedPreferences});
+  EventLocalDataSourceImpl();
 
   @override
   Future<List<Event>> getCachedEvents() async => [];

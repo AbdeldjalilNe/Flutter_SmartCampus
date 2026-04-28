@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:go_router/go_router.dart';
+import '../../../core/navigation/app_router.dart';
 import '../../../core/theme/app_theme.dart';
 import '../../bloc/auth/auth_bloc.dart';
 
@@ -15,7 +17,7 @@ class ProfilePage extends StatelessWidget {
             IconButton(
               icon: const Icon(Icons.edit),
               onPressed: () {
-                // Edit profile
+                context.goToEditProfile();
               },
             ),
           ],
@@ -97,6 +99,24 @@ class ProfilePage extends StatelessWidget {
                     title: 'Role',
                     value: user.role.name.toUpperCase(),
                   ),
+                  SizedBox(height: 32.h),
+                  
+                  // Logout Button
+                  SizedBox(
+                    width: double.infinity,
+                    child: OutlinedButton.icon(
+                      onPressed: () => _showLogoutDialog(context),
+                      icon: const Icon(Icons.logout, color: AppTheme.errorColor),
+                      label: const Text(
+                        'Logout',
+                        style: TextStyle(color: AppTheme.errorColor),
+                      ),
+                      style: OutlinedButton.styleFrom(
+                        side: const BorderSide(color: AppTheme.errorColor),
+                        padding: EdgeInsets.symmetric(vertical: 16.h),
+                      ),
+                    ),
+                  ),
                 ],
               ),
             );
@@ -118,4 +138,32 @@ class ProfilePage extends StatelessWidget {
       );
 
   String _formatDate(DateTime date) => '${date.day}/${date.month}/${date.year}';
+
+  void _showLogoutDialog(BuildContext context) {
+    showDialog<void>(
+      context: context,
+      builder: (dialogContext) => AlertDialog(
+          title: const Text('Logout'),
+          content: const Text('Are you sure you want to log out?'),
+          actions: <Widget>[
+            TextButton(
+              child: const Text('Cancel'),
+              onPressed: () {
+                Navigator.of(dialogContext).pop();
+              },
+            ),
+            TextButton(
+              child: const Text(
+                'Logout',
+                style: TextStyle(color: AppTheme.errorColor),
+              ),
+              onPressed: () {
+                Navigator.of(dialogContext).pop();
+                context.read<AuthBloc>().add(LogoutRequested());
+              },
+            ),
+          ],
+        ),
+    );
+  }
 }

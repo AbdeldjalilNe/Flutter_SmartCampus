@@ -1,5 +1,5 @@
-import '../../../../domain/entities/event.dart';
 import '../../../../domain/entities/check_in.dart';
+import '../../../../domain/entities/event.dart';
 
 abstract class EventRemoteDataSource {
   Future<List<Event>> getEvents({EventCategory? category, EventStatus? status});

@@ -73,10 +73,10 @@ class _QrScannerPageState extends State<QrScannerPage> {
                   },
                 ),
               ),
-              Expanded(
+              const Expanded(
                 child: ColoredBox(
                   color: Colors.black,
-                  child: const Center(
+                  child: Center(
                     child: Text(
                       'Scan a QR code to check in',
                       style: TextStyle(

@@ -13,13 +13,13 @@ class TimetableRepositoryImpl implements TimetableRepository {
   final TimetableLocalDataSource localDataSource;
 
   @override
-  Future<Either<CacheFailure, List<TimetableItem>>> getTimetable() async => Right([]);
+  Future<Either<CacheFailure, List<TimetableItem>>> getTimetable() async => const Right([]);
 
   @override
-  Future<Either<CacheFailure, TimetableItem>> getTimetableItemById(String id) async => Left(CacheFailure(message: 'Not implemented'));
+  Future<Either<CacheFailure, TimetableItem>> getTimetableItemById(String id) async => const Left(CacheFailure(message: 'Not implemented'));
 
   @override
-  Future<Either<CacheFailure, List<TimetableItem>>> getTimetableForDay(DayOfWeek day) async => Right([]);
+  Future<Either<CacheFailure, List<TimetableItem>>> getTimetableForDay(DayOfWeek day) async => const Right([]);
 
   @override
   Future<Either<CacheFailure, TimetableItem>> addTimetableItem(TimetableItem item) async => Right(item);
@@ -28,51 +28,51 @@ class TimetableRepositoryImpl implements TimetableRepository {
   Future<Either<CacheFailure, TimetableItem>> updateTimetableItem(TimetableItem item) async => Right(item);
 
   @override
-  Future<Either<CacheFailure, void>> deleteTimetableItem(String id) async => Right(null);
+  Future<Either<CacheFailure, void>> deleteTimetableItem(String id) async => const Right(null);
 
   @override
-  Future<Either<CacheFailure, List<TimetableItem>>> getUpcomingClasses() async => Right([]);
+  Future<Either<CacheFailure, List<TimetableItem>>> getUpcomingClasses() async => const Right([]);
 
   @override
-  Future<Either<CacheFailure, TimetableItem?>> getNextClass() async => Right(null);
+  Future<Either<CacheFailure, TimetableItem?>> getNextClass() async => const Right(null);
 
   @override
-  Future<Either<CacheFailure, List<TimetableItem>>> getClassesForDate(DateTime date) async => Right([]);
+  Future<Either<CacheFailure, List<TimetableItem>>> getClassesForDate(DateTime date) async => const Right([]);
 
   @override
-  Future<Either<CacheFailure, List<TimetableItem>>> findConflicts(TimetableItem item) async => Right([]);
+  Future<Either<CacheFailure, List<TimetableItem>>> findConflicts(TimetableItem item) async => const Right([]);
 
   @override
-  Future<Either<CacheFailure, bool>> hasConflicts(TimetableItem item) async => Right(false);
+  Future<Either<CacheFailure, bool>> hasConflicts(TimetableItem item) async => const Right(false);
 
   @override
-  Future<Either<CacheFailure, void>> scheduleClassReminder(String itemId) async => Right(null);
+  Future<Either<CacheFailure, void>> scheduleClassReminder(String itemId) async => const Right(null);
 
   @override
-  Future<Either<CacheFailure, void>> cancelClassReminder(String itemId) async => Right(null);
+  Future<Either<CacheFailure, void>> cancelClassReminder(String itemId) async => const Right(null);
 
   @override
   Future<Either<CacheFailure, void>> updateReminderSettings({
     required String itemId,
     required bool enabled,
     int? reminderMinutesBefore,
-  }) async => Right(null);
+  }) async => const Right(null);
 
   @override
-  Future<Either<Failure, String>> exportToJson() async => Right('{}');
+  Future<Either<Failure, String>> exportToJson() async => const Right('{}');
 
   @override
-  Future<Either<Failure, List<TimetableItem>>> importFromJson(String jsonData) async => Right([]);
+  Future<Either<Failure, List<TimetableItem>>> importFromJson(String jsonData) async => const Right([]);
 
   @override
-  Future<Either<CacheFailure, void>> addMultipleItems(List<TimetableItem> items) async => Right(null);
+  Future<Either<CacheFailure, void>> addMultipleItems(List<TimetableItem> items) async => const Right(null);
 
   @override
-  Future<Either<CacheFailure, void>> deleteAllItems() async => Right(null);
+  Future<Either<CacheFailure, void>> deleteAllItems() async => const Right(null);
 
   @override
-  Future<Either<CacheFailure, Map<DayOfWeek, int>>> getClassCountByDay() async => Right({});
+  Future<Either<CacheFailure, Map<DayOfWeek, int>>> getClassCountByDay() async => const Right({});
 
   @override
-  Future<Either<CacheFailure, int>> getTotalWeeklyHours() async => Right(0);
+  Future<Either<CacheFailure, int>> getTotalWeeklyHours() async => const Right(0);
 }

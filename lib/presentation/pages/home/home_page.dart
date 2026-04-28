@@ -120,13 +120,16 @@ class HomePage extends StatelessWidget {
                         ],
                       ),
                     ),
-                    CircleAvatar(
-                      radius: 30.w,
-                      backgroundColor: Colors.white.withOpacity(0.2),
-                      child: Icon(
-                        Icons.person,
-                        size: 30.w,
-                        color: Colors.white,
+                    GestureDetector(
+                      onTap: () => context.push('/profile'),
+                      child: CircleAvatar(
+                        radius: 30.w,
+                        backgroundColor: Colors.white.withOpacity(0.2),
+                        child: Icon(
+                          Icons.person,
+                          size: 30.w,
+                          color: Colors.white,
+                        ),
                       ),
                     ),
                   ],

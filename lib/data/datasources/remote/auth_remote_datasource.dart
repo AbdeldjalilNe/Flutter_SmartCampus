@@ -1,10 +1,10 @@
 import 'dart:convert';
 import 'dart:math';
+
 import '../../../core/errors/exceptions.dart';
 import '../../../core/network/dio_client.dart';
 import '../../../core/utils/logger.dart';
 import '../../../domain/entities/user.dart';
-import '../../../core/constants/app_constants.dart';
 
 abstract class AuthRemoteDataSource {
   Future<User> login({

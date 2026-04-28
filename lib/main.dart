@@ -111,7 +111,6 @@ class _SmartCampusAppState extends State<SmartCampusApp>
                   debugShowCheckedModeBanner: false,
                   theme: AppTheme.lightTheme,
                   darkTheme: AppTheme.darkTheme,
-                  themeMode: ThemeMode.system,
                   locale: localizationState.locale,
                   supportedLocales: const [
                     Locale('en', 'US'),

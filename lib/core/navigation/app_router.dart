@@ -11,6 +11,7 @@ import '../../presentation/pages/events/events_page.dart';
 import '../../presentation/pages/home/home_page.dart';
 import '../../presentation/pages/login/login_page.dart';
 import '../../presentation/pages/map/campus_map_page.dart';
+import '../../presentation/pages/profile/edit_profile_page.dart';
 import '../../presentation/pages/profile/profile_page.dart';
 import '../../presentation/pages/qr_scanner/qr_scanner_page.dart';
 import '../../presentation/pages/register/register_page.dart';
@@ -18,7 +19,6 @@ import '../../presentation/pages/safety/safety_page.dart';
 import '../../presentation/pages/settings/settings_page.dart';
 import '../../presentation/pages/splash/splash_page.dart';
 import '../../presentation/pages/timetable/timetable_page.dart';
-import '../utils/dependency_injection.dart';
 import 'router_refresh_stream.dart';
 
 class AppRouter {
@@ -148,6 +148,19 @@ class AppRouter {
         path: '/profile',
         name: 'profile',
         builder: (context, state) => const ProfilePage(),
+      ),
+      GoRoute(
+        path: '/profile/edit',
+        name: 'edit_profile',
+        builder: (context, state) {
+          final authBloc = context.read<AuthBloc>();
+          final authState = authBloc.state;
+          if (authState is Authenticated) {
+            return EditProfilePage(user: authState.user);
+          }
+          // Fallback if somehow accessed without being authenticated
+          return const ProfilePage();
+        },
       ),
       GoRoute(
         path: '/qr-scanner',
@@ -287,6 +300,7 @@ extension NavigationExtension on BuildContext {
   void goToMap() => go('/map');
   void goToSettings() => go('/settings');
   void goToProfile() => go('/profile');
+  void goToEditProfile() => go('/profile/edit');
   void goToQrScanner() => go('/qr-scanner');
   void goToSafety() => go('/safety');
   void goToAdmin() => go('/admin');

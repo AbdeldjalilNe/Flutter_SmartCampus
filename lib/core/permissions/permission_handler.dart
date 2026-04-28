@@ -1,5 +1,4 @@
 import 'package:geolocator/geolocator.dart';
-import 'package:image_picker/image_picker.dart';
 import 'package:local_auth/local_auth.dart';
 import 'package:permission_handler/permission_handler.dart';
 import '../errors/exceptions.dart' hide PermissionDeniedException;
